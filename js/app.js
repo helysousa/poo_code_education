@@ -1,7 +1,6 @@
 (function() {
         var app = angular.module('listStore',[]);
 
-
         app.controller('ListController', [ '$http', function($http){
 
             var store = this;

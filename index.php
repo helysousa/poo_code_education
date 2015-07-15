@@ -66,6 +66,7 @@ require_once "ClienteRepository.php";
         <table class="table table-striped">
             <thead>
                 <th>Código</th>
+                <th>CPF</th>
                 <th>Nome</th>
                 <th>Cidade</th>
                 <th>UF</th>
@@ -73,14 +74,14 @@ require_once "ClienteRepository.php";
 
             <tfoot>
                 <tr>
-                    <td colspan="4">Clientes listados: {{ list.clientes.length }}</td>
+                    <td colspan="5">Clientes listados: {{ list.clientes.length }}</td>
                 </tr>
             </tfoot>
-
-            <tbody ng-repeat="cliente in list.clientes | orderBy:'-Nome'">
+            <tbody ng-repeat="cliente in list.clientes | orderBy: 'Nome'">
 
                     <TR>
                         <TD>{{ cliente.Codigo }}</TD>
+                        <TD>{{ cliente.CPF }}</TD>
                         <TD>{{ cliente.Nome }}</TD>
                         <TD>{{ cliente.Cidade }}</TD>
                         <TD>{{ cliente.UF }}</TD>
