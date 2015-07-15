@@ -18,6 +18,8 @@ class ClienteFakeRepository implements ClienteRepositoryInterface
      */
     public static function getClientes($quantidade)
     {
+
+
         for ($i=1;$i<=$quantidade;$i++)
         {
             $clientes[$i] = new Cliente();
