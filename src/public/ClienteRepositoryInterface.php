@@ -2,6 +2,6 @@
 
 interface ClienteRepositoryInterface
 {
-    public static function getClientes($quantidade);
-    public static function getJsonList($quantidade);
+    public static function getClientes();
+    public static function getJsonList();
 }

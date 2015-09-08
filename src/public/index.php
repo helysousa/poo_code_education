@@ -13,7 +13,9 @@ require_once "ClienteRepository.php";
  *
  */
 
-    $clientes = ClienteFakeRepository::getClientes(10);
+   // $clientes = ClienteFakeRepository::getClientes(10);
+
+           // var_dump($clientes); die();
 
 ?>
 
